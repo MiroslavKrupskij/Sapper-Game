@@ -1,0 +1,112 @@
+/* Общий фон и шрифт */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #f0edf9, #eae6f9);
+    -fx-font-family: "Arial";
+}
+
+/* Заголовок */
+.header-text {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}
+
+/* Кнопки меню */
+.menu-button, .menu-button-small {
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #8000ff, #007bff);
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 5, 0, 2, 2);
+    -fx-pref-width: 220px;
+}
+
+.menu-button-small {
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+    -fx-pref-width: 100px;
+}
+
+/* Панель гри */
+.game-grid {
+    -fx-hgap: 2;
+    -fx-vgap: 2;
+    -fx-alignment: top-center;
+    -fx-padding: 20 0 40 0;
+}
+
+/* Кнопки поля */
+.game-button {
+    -fx-background-color: #c8c8c8;
+    -fx-border-color: #999999;
+    -fx-border-width: 1;
+    -fx-background-radius: 6;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}
+
+/* Стиль бомб */
+.bomb-button {
+    -fx-background-color: red;
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+/* Стиль флажков */
+.flagged-button {
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+/* Метки таймера и уровня */
+#timer-label, #level-label, #bomb-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4a148c;
+}
+
+/* Стиль диалога */
+.dialog-root {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-padding: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.2, 0, 4);
+}
+
+.dialog-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4a148c;
+    -fx-alignment: center;
+}
+
+.dialog-button {
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 25;
+    -fx-background-color: linear-gradient(to right, #8e2de2, #4a00e0);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+    -fx-pref-width: 220px;
+    -fx-max-width: 220px;
+    -fx-min-width: 220px;
+}
+
+
+.label {
+    -fx-wrap-text: true;
+    -fx-text-overrun: ellipsis;
+    -fx-alignment: center;
+}

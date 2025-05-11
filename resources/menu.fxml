@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.minesweeper.controller.MenuController"
+      alignment="CENTER" spacing="20"
+      stylesheets="@style.css">
+
+    <Text text="Ласкаво просимо до Сапера!" styleClass="header-text"/>
+
+    <Button text="Легкий" onAction="#startEasy" styleClass="menu-button"/>
+    <Button text="Середній" onAction="#startMedium" styleClass="menu-button"/>
+    <Button text="Важкий" onAction="#startHard" styleClass="menu-button"/>
+    <Button text="Найважчий" onAction="#startExtreme" styleClass="menu-button"/>
+
+</VBox>
